@@ -1,0 +1,10 @@
+{
+  "retainLines": true,
+  "compact": true,
+  "comments": false,
+  "whitelist": [
+    "es6.constants",
+    "es6.modules"
+  ],
+  "sourceMaps": false
+}

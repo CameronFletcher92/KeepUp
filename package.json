@@ -1,0 +1,16 @@
+{
+  "name": "KeepUp",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node_modules/react-native/packager/packager.sh"
+  },
+  "dependencies": {
+    "react-native": "^0.11.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^4.1.2",
+    "eslint": "^1.4.1",
+    "eslint-plugin-react": "^3.3.2"
+  }
+}
