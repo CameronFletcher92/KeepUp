@@ -5,7 +5,7 @@ var App = React.createClass({
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
-          Welcome to React Nativve!
+          Welcome to React Native!
         </Text>
         <Text style={styles.instructions}>
           To get started, edit index.ios.js
@@ -38,4 +38,4 @@ var styles = StyleSheet.create({
   },
 })
 
-module.exports = App
+export default App
