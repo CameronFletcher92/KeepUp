@@ -1,23 +1,18 @@
-import React, { Component, PropTypes } from 'react'
+import React, { Component, PropTypes, View, Text, StyleSheet, Button } from 'react-native'
 
 class Counter extends Component {
   render() {
     const { increment, incrementIfOdd, incrementAsync, decrement, count, label } = this.props
     return (
-      <div>
-        <p> {label} </p>
-        <p>
-          Count: {count}
-          {' '}
-          <button onClick={() => increment(1)}>+</button>
-          {' '}
-          <button onClick={() => decrement(1)}>-</button>
-          {' '}
-          <button onClick={() => incrementIfOdd()}>Increment if odd</button>
-          {' '}
-          <button onClick={() => incrementAsync()}>Increment async</button>
-        </p>
-      </div>
+      <View style={styles.container}>
+        <Text> Count: {count} </Text>
+        <View style={styles.buttonRow}>
+          <Text style={styles.button} onPress={() => increment(1)}>+</Text>
+          <Text style={styles.button} onPress={() => decrement(1)}>-</Text>
+          <Text style={styles.button} onPress={() => incrementIfOdd()}>+ if odd</Text>
+          <Text style={styles.button} onPress={() => incrementAsync()}>+ async</Text>
+        </View>
+      </View>
     )
   }
 }
@@ -30,5 +25,21 @@ Counter.propTypes = {
   count: PropTypes.number.isRequired,
   label: PropTypes.string.isRequired
 }
+
+var styles = StyleSheet.create({
+  button: {
+    margin: 10
+  },
+  buttonRow: {
+    flexDirection: 'row',
+    alignItems: 'stretch'
+  },
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#F5FCFF',
+  }
+})
 
 export default Counter
