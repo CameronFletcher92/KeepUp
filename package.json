@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "node_modules/react-native/packager/packager.sh"
+    "start": "node_modules/react-native/packager/packager.sh",
+    "dev": "open \"/Applications/Xcode.app/Contents/Developer/Applications/iOS Simulator.app\" && npm run start"
   },
   "dependencies": {
     "react-native": "^0.11.0",
